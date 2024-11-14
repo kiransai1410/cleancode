@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+#include <array>
+
+int main()
+{
+    std::array<std::string, 5> arr {"Bosch","Java","Python","Basic","JS"};
+    
+    for(auto str : arr)
+    {
+        if((str[0] == 'B') && (!str.empty()))
+        {
+            std::cout<<str<<std::endl;
+        }
+    }
+    return 0;
+}
